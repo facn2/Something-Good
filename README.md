@@ -1,2 +1,2 @@
-# Something-Good-
+# Something-Good
 An App for volunteering events
