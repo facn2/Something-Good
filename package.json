@@ -1,0 +1,22 @@
+{
+  "name": "something-good",
+  "version": "1.0.0",
+  "description": "An App for Volunteering Events",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facn2/Something-Good.git"
+  },
+  "author": "Vered & Sajeda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facn2/Something-Good/issues"
+  },
+  "homepage": "https://github.com/facn2/Something-Good#readme"
+}
