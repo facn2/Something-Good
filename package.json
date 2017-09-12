@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node_modules/.bin/semistandard | node_modules/.bin/snazzy"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,18 @@
   "bugs": {
     "url": "https://github.com/facn2/Something-Good/issues"
   },
-  "homepage": "https://github.com/facn2/Something-Good#readme"
+  "homepage": "https://github.com/facn2/Something-Good#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "semistandard": "^11.0.0",
+    "snazzy": "^7.0.0"
+  },
+  "semistandard": {
+    "globals": [
+      "y"
+    ]
+  },
+  "dependencies": {
+  },
+  "pre-commit": ["lint"]
 }
