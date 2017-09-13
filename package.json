@@ -29,6 +29,7 @@
     "globals": []
   },
   "dependencies": {
+    "express": "^4.15.4",
     "handlebars": "^4.0.10"
   },
   "pre-commit": [
