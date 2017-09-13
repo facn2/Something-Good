@@ -26,11 +26,12 @@
     "snazzy": "^7.0.0"
   },
   "semistandard": {
-    "globals": [
-      "y"
-    ]
+    "globals": []
   },
   "dependencies": {
+    "handlebars": "^4.0.10"
   },
-  "pre-commit": ["lint"]
+  "pre-commit": [
+    "lint"
+  ]
 }
