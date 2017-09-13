@@ -51,10 +51,11 @@ After we searched about the features that every Technology provides we chose to 
 * other team member understands the code before approval
 
 ### Architecture
-![architecture](architecture.jpg)
+![architecture](./public/images/architecture.jpg)
 
 ### Wireframe
-
+![home](./public/images/home.png)![event](./public/images/event.png)
+![create](./public/images/create.png)![thanks](./public/images/thanks.png)
 
 ### Stretch Goals
 
