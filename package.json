@@ -7,9 +7,10 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "node_modules/.bin/semistandard | node_modules/.bin/snazzy"
+    "lint": "node_modules/.bin/semistandard | node_modules/.bin/snazzy",
+    "devStart": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/facn2/Something-Good#readme",
   "devDependencies": {
+    "nodemon": "^1.12.0",
     "pre-commit": "^1.2.2",
     "semistandard": "^11.0.0",
     "snazzy": "^7.0.0"
