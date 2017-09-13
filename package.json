@@ -7,6 +7,7 @@
     "test": "tests"
   },
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node_modules/.bin/semistandard | node_modules/.bin/snazzy"
   },
@@ -31,6 +32,9 @@
     ]
   },
   "dependencies": {
+    "express": "^4.15.4"
   },
-  "pre-commit": ["lint"]
+  "pre-commit": [
+    "lint"
+  ]
 }
