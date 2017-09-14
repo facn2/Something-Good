@@ -5,6 +5,8 @@ app.get('/', (req, res) => {
   res.send('Something Good is happening here');
 });
 
-app.listen(7000, () => {
-  console.log('Magic happens on port 7000!');
+app.get('/events', (req, res) => {
+  res.send('We have some amazing events to share with you!');
 });
+
+module.exports = app;
