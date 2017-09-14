@@ -34,7 +34,8 @@
   "dependencies": {
     "express": "^4.15.4",
     "handlebars": "^4.0.10",
-    "mongodb": "^2.2.31"
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.11"
   },
   "pre-commit": [
     "lint"
