@@ -1,8 +1,14 @@
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://00/something-good';
+var mongoDB = mongoose.connect('mongodb://localhost');
+
+// mongoose.connect(process.env.MONGODB_URI, {
+//   useMongoClient: true
+// });
+
 mongoose.connect(mongoDB);
+
 var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'mongoDB connection error:'));
+db.on('error', console.error.bind(console, 'Problem with mongoDB connection'));
 
 var Schema = mongoose.Schema;
 var eventSchema = new Schema({
