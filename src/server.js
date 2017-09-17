@@ -1,8 +1,10 @@
-const app = require('./app.js');
+const mongoose = require('mongoose');
+const app = require('./app.js'); require('env2')('./config.env');
 
-// app.listen(app.get('port'), () => {
-//   console.log('App running on port', app.get('port'));
-// });
-app.listen(5000, () => {
+mongoose.connect(process.env.MONGODB_URI, {
+  useMongoClient: true
+});
+
+app.listen(app.get('port'), () => {
   console.log('Magic happens on port 5000!');
 });
