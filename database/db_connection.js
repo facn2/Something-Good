@@ -1,17 +1,24 @@
-var mongoose = require('mongoose');
-var mongoDB = mongoose.connect('mongodb://localhost');
+// const MongoClient = require('mongodb').MongoClient;
+const mongoose = require('mongoose');
+const mongoDB = 'mongodb://localhost:5000/Something-Good';
 
-// mongoose.connect(process.env.MONGODB_URI, {
-//   useMongoClient: true
+mongoose.connect(process.env.MONGODB_URI, {
+  useMongoClient: true
+});
+// MongoClient.connect(mongoDB, function (err, db) {
+//   assert.equal(null, err);
+//   console.log('Connected successfully to server');
+//   db.close();
 // });
 
 mongoose.connect(mongoDB);
+console.log('Connected successfully to server');
 
-var db = mongoose.connection;
+const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Problem with mongoDB connection'));
 
-var Schema = mongoose.Schema;
-var eventSchema = new Schema({
+const Schema = mongoose.Schema;
+const eventSchema = new Schema({
   title: String,
   description: String,
   location: String,
