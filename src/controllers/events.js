@@ -1,6 +1,6 @@
-const events = require('./../../database/db_connection.js');
+const eventModel = require('./../../database/eventModel.js');
 
 exports.get = (req, res) => {
-  events.find();
-  res.render('events', { events });
+  eventModel.find();
+  res.render('eventModel', { eventModel });
 };
