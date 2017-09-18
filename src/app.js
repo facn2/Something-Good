@@ -4,27 +4,27 @@ const path = require('path');
 const controllers = require('./controllers/index');
 const helpers = require('./views/helpers/index');
 const app = express();
+//
+// const mongoose = require('mongoose');
+// const mongoDB = 'mongodb://localhost/something-good';
+// const db = mongoose.connection;
+//
+// mongoose.connect(mongoDB);
+//
+// db.on('error', console.error.bind(console, 'Problem with mongoDB connection'));
 
-const mongoose = require('mongoose');
-const mongoDB = 'mongodb://localhost/something-good';
-const db = mongoose.connection;
-
-mongoose.connect(mongoDB);
-
-db.on('error', console.error.bind(console, 'Problem with mongoDB connection'));
-
-const Schema = mongoose.Schema;
-const eventSchema = new Schema({
-  title: String,
-  description: String,
-  location: String,
-  date: Date,
-  image: String,
-  participants: Number
-});
-var eventModel = mongoose.model('eventModel', eventSchema);
-
-module.exports = eventModel;
+// const Schema = mongoose.Schema;
+// const eventSchema = new Schema({
+//   title: String,
+//   description: String,
+//   location: String,
+//   date: Date,
+//   image: String,
+//   participants: Number
+// });
+// var eventModel = mongoose.model('eventModel', eventSchema);
+//
+// module.exports = eventModel;
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
