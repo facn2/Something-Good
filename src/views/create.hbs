@@ -1,17 +1,18 @@
 <section class="main-container">
-<ul class="create-event-list" id="craeteEventsList">
-<li class="create-event-item">
-  <h1 class="title"> CREATE EVENT</h1>
-  <h2 class="event-name">Title<h2>
-    <input type="text" name="title" value="">
-  <h2 class="event-location">Location<h2>
-    <input type="text" name="location" value="">
-  <p class="short-description">Description<p>
-    <input type="text" name="description" value="">
-  <p class="event-date"></p>
-  <input type="text" name="date" value="">
-</li>
-</ul>
+    <h1 class="title">CREATE EVENT</h1>
+    <form action="/insert" method="post" class="create-event" id="craeteEvent">
+      <label for="title" class="event-name">Title<label>
+      <input type="text" name="title" id="title" value=""><br>
+      <label for="location" class="event-location">Location<label>
+      <input type="text" name="location" id="location" value=""><br>
+      <label for="description" class="description">Description<label>
+      <input type="text" name="description" id="description" value=""><br>
+      <label for="date" class="event-date">Date</label>
+      <input type="text" name="date" id="date" value=""><br>
+      <!-- <label for="time" class="event-time">Time</label>
+      <input type="text" name="time" id="time" value=""><br> -->
+      <button type="submit" class="submit">SUBMIT</button>
+  </form>
 </section>
 
 <script src="/js/index.js"></script>
