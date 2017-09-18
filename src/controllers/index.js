@@ -33,14 +33,14 @@ router.get('/error', (req, res) => {
 });
 
 // Handle 404
-router.use(function (err, req, res)  {
-  res.render('error');
-});
-
-// Handle 500
-router.use(function (err, req, res) {
-  res.render('error');
-});
+// router.use(function (err, req, res)  {
+//   res.render('error');
+// });
+//
+// // Handle 500
+// router.use(function (err, req, res) {
+//   res.render('error');
+// });
 
 router.use(error.client);
 router.use(error.server);
