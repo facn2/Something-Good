@@ -6,7 +6,7 @@ const events = require('./events');
 const event = require('./event');
 const create = require('./create');
 const thanks = require('./thanks');
-// const error = require('./error');
+const error = require('./error');
 
 router.get('/', (req, res) => {
   res.render('home', home);
@@ -28,7 +28,21 @@ router.get('/thanks', (req, res) => {
   res.render('thanks', thanks);
 });
 
-// router.use(error.client);
-// router.use(error.server);
+router.get('/error', (req, res) => {
+  res.render('error', error);
+});
+
+// Handle 404
+router.use(function (err, req, res)  {
+  res.render('error');
+});
+
+// Handle 500
+router.use(function (err, req, res) {
+  res.render('error');
+});
+
+router.use(error.client);
+router.use(error.server);
 
 module.exports = router;
