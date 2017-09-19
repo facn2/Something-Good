@@ -7,7 +7,7 @@ const event = require('./event');
 const create = require('./create');
 const thanks = require('./thanks');
 const error = require('./error');
-// const insert = require('./insert-event');
+// const insert = require('./insert');
 
 router.get('/', (req, res) => {
   res.render('home', home);
@@ -22,13 +22,14 @@ router.get('/create', (req, res) => {
 });
 
 router.get('/thanks', (req, res) => {
-  // insertEvent();
   res.render('thanks', thanks);
 });
 
 router.get('/error', (req, res) => {
   res.render('error', error);
 });
+
+// router.get('/insert', insert);
 
 // Handle 404
 // router.use(function (err, req, res)  {
