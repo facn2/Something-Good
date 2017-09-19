@@ -7,16 +7,18 @@
 
     <li class="event-item">
 
+
       <a class="event-link" href="/events/{{this.title}}">
         <h2 class="event-name">{{this.title}}</h2>
         <image class="event-image" src="{{this.image}}" alt="{{this.title}}">
       </a>
-      <p class="short-description">{{this.descrption}}</p>
-      <p class="event-day">{{this.day}}</p>
-      <p class="event-date">{{this.date}}</p>
-      <p class="event-time">{{this.time}}</p>
-      <p class="event-location">{{this.location}}</p>
-      <p class="event-participants">{{this.participants}}</p>
+      <p class="short-description">Description: {{ this.description }}</p>
+      <p class="event-day">When? {{ this.day }}
+        <span class="event-date"> {{ this.date }} </span>
+        <span class="event-time"> {{ this.time }} </span>
+      </p>
+      <p class="event-location"> Where? {{ this.location }}</p>
+      <p class="event-participants"> Attendants: {{ this.participants }}</p>
 
     </li>
 
