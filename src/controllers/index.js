@@ -12,9 +12,7 @@ router.get('/', (req, res) => {
   res.render('home', home);
 });
 
-router.get('/events', (req, res) => {
-  res.render('events', events);
-});
+router.get('/events', events);
 
 router.get('/event', (req, res) => {
   res.render('event', event);
