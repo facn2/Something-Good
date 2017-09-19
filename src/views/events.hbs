@@ -6,10 +6,18 @@
     {{#each events}}
 
     <li class="event-item">
-      <h2 class="event-name"></h2>
-      <a class="event-link" href="/events/{{this}}"><div class="event-image"></div></a>
-      <p class="short-description"></p>
-      <p class="event-date"></p>
+
+      <a class="event-link" href="/events/{{this}}">
+        <h2 class="event-name">{{this.title}}</h2>
+        <image class="event-image">{{this.image}}
+      </a>
+      <p class="short-description">{{this.descrption}}</p>
+      <p class="event-day">{{this.day}}</p>
+      <p class="event-date">{{this.date}}</p>
+      <p class="event-time">{{this.time}}</p>
+      <p class="event-location">{{this.location}}</p>
+      <p class="event-participants">{{this.participants}}</p>
+
     </li>
 
     {{/each}}

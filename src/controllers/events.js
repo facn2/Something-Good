@@ -1,6 +1,12 @@
-const eventModel = require('./../../database/eventModel.js');
+const events = require('./../../database/eventModel.js');
 
-exports.get = (req, res) => {
-  eventModel.find();
-  res.render('eventModel', { eventModel });
+module.exports = (req, res) => {
+  events.find({}, (err, results) => {
+    if (err) {
+      console.log('Error with finding data ', err);
+    } else {
+      console.log('found the data! ', events);
+      res.render('events', { events });
+    }
+  });
 };
