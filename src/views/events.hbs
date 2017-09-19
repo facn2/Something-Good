@@ -7,8 +7,7 @@
 
     <li class="event-item">
 
-
-      <a class="event-link" href="/events/{{this.title}}">
+      <a class="event-link" href="/event/{{this.id}}">
         <h2 class="event-name">{{this.title}}</h2>
         <image class="event-image" src="{{this.image}}" alt="{{this.title}}">
       </a>
@@ -18,8 +17,7 @@
         <span class="event-time"> {{ this.time }} </span>
       </p>
       <p class="event-location"> Where? {{ this.location }}</p>
-      <p class="event-participants"> Attendants: {{ this.participants }}</p>
-
+      
     </li>
 
     {{/each}}

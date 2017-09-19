@@ -1,8 +1,15 @@
 <section class="main-container">
-  <h1 class="main-title"></h1>
-  <img class="single-event-image" src="../images/{{event}}.jpg" alt="{{event}}">
-  <h2 class="single-event-date"></h2>
-  <p class="single-event-description"></p>
-  <p class="event-participants"></p>
-  <button class="participants-btn"></button>
+
+<h2 class="event-name">{{ event.title }}</h2>
+<image class="event-image" src="{{ event.image }}" alt="{{ event.title }}">
+<p class="short-description">Description: {{ event.description }}</p>
+<p class="event-day">When? {{ event.day }}
+  <span class="event-date"> {{ event.date }} </span>
+  <span class="event-time"> {{ event.time }} </span>
+</p>
+<p class="event-location"> Where? {{ event.location }}</p>
+<p class="event-participants"> Attendants: {{ event.participants }}</p>
+
+<button class="participants-btn"> I want to join! </button>
+
 </section>

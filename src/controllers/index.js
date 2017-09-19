@@ -7,6 +7,7 @@ const event = require('./event');
 const create = require('./create');
 const thanks = require('./thanks');
 const error = require('./error');
+// const insert = require('./insert-event');
 
 router.get('/', (req, res) => {
   res.render('home', home);
@@ -14,15 +15,14 @@ router.get('/', (req, res) => {
 
 router.get('/events', events);
 
-router.get('/event', (req, res) => {
-  res.render('event', event);
-});
+router.get('/event/:id', event);
 
 router.get('/create', (req, res) => {
   res.render('create', create);
 });
 
 router.get('/thanks', (req, res) => {
+  // insertEvent();
   res.render('thanks', thanks);
 });
 
