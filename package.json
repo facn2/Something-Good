@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node ./src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node_modules/.bin/semistandard | node_modules/.bin/snazzy",
     "devStart": "nodemon ./src/server.js"
@@ -36,10 +36,15 @@
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.10",
+    "module": "^1.2.5",
     "mongodb": "^2.2.31",
     "mongoose": "^4.11.11"
   },
   "pre-commit": [
     "lint"
-  ]
+  ],
+  "engines": {
+    "node": "8.2.1",
+    "npm": "5.4.2"
+  }
 }
