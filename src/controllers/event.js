@@ -1,9 +1,12 @@
-const events = require('./../../database/db_connection.js');
+const events = require('./../../database/eventModel.js');
 
-exports.get = (req, res, next) => {
-  const { event } = req.params;
-  if (events.includes(event)) {
-    return res.render('event', { event });
-  }
-  next();
+module.exports = (req, res) => {
+  events.findById(req.params.id, (err, result) => {
+    console.log('result ', result);
+    if (err) {
+      console.log('Error with finding data ', err);
+    } else {
+      res.render('event', { event: result });
+    }
+  });
 };
