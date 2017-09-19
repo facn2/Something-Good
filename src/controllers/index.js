@@ -22,7 +22,6 @@ router.get('/create', (req, res) => {
 });
 
 router.get('/thanks', (req, res) => {
-  // insertEvent();
   res.render('thanks', thanks);
 });
 
