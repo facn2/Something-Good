@@ -17,12 +17,17 @@
         <span class="event-time"> {{ this.time }} </span>
       </p>
       <p class="event-location"> Where? {{ this.location }}</p>
-      
+
     </li>
 
     {{/each}}
 
   </ul>
+
+  <form action="/create" method="get" class="create-event" id="craeteEvent">
+    <button type="submit" class="submit">Create Event</button>
+  </form>
+
 </section>
 
 <script src="/js/index.js"></script>
