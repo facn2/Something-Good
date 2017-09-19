@@ -10,7 +10,7 @@ db.once('open', function () {
     day: 'Thursday',
     date: '28/09/2017',
     time: '11:00',
-    image: './images/clean.png',
+    image: '/images/clean.png',
     participants: '10'
   };
 
@@ -27,7 +27,7 @@ db.once('open', function () {
     day: 'Thursday',
     date: '5/10/2017',
     time: '11:00',
-    image: './images/senior.png',
+    image: '/images/senior.png',
     participants: '14'
   };
   console.log(senior);
@@ -43,7 +43,7 @@ db.once('open', function () {
     day: 'Tuesday',
     date: '19/09/2017',
     time: '10:00',
-    image: './images/party.png',
+    image: '/images/party.png',
     participants: '9'
   };
 
@@ -60,7 +60,7 @@ db.once('open', function () {
     day: 'Monday',
     date: '25/09/2017',
     time: '13:00',
-    image: './images/kids.png',
+    image: '/images/kids.png',
     participants: '5'
   };
 
@@ -77,7 +77,7 @@ db.once('open', function () {
     day: 'Thursday',
     date: '07/10/2017',
     time: '15:00',
-    image: './images/garden.png',
+    image: '/images/garden.png',
     participants: '16'
   };
 
@@ -94,7 +94,7 @@ db.once('open', function () {
     day: 'Wednesday',
     date: '18/10/2017',
     time: '10:00',
-    image: './images/code.png',
+    image: '/images/code.png',
     participants: '20'
   };
 
