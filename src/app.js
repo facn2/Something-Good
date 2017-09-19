@@ -19,7 +19,7 @@ exphbs({
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 5000);
 
 app.use(controllers);
 

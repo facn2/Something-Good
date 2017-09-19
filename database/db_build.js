@@ -1,19 +1,22 @@
-const eventModel = require('eventModel.js');
+const eventModel = require('./eventModel.js');
+const db = require('./../database/db_connection.js');
 
-const cleaning = {
-  title: 'Cleaning the street',
-  description: 'We will clean the bisharah street, and remove the trash',
-  location: 'Nazareth, Bisharah street',
-  day: 'Thursday',
-  date: '28/09/2017',
-  time: '11:00',
-  image: './images/clean.png',
-  participants: '10'
-};
+db.once('open', function () {
+  console.log('connected to DB');
+  const cleaning = {
+    title: 'Cleaning the street',
+    description: 'We will clean the bisharah street, and remove the trash',
+    location: 'Nazareth, Bisharah street',
+    day: 'Thursday',
+    date: '28/09/2017',
+    time: '11:00',
+    image: './images/clean.png',
+    participants: '10'
+  };
 
 console.log(cleaning);
 eventModel.create(cleaning, err => {
-  if (err) console.log(err);
+  if (err) throw(err);
   console.log('saved');
 });
 
@@ -99,4 +102,5 @@ console.log(code);
 eventModel.create(code, err => {
   if (err) console.log(err);
   console.log('saved');
+});
 });
