@@ -5,7 +5,6 @@ module.exports = (req, res) => {
     if (err) {
       console.log('Error with finding data ', err);
     } else {
-      console.log('found the data! ', result);
       res.render('events', { events: result });
     }
   });
