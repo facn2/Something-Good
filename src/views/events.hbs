@@ -7,9 +7,10 @@
 
     <li class="event-item">
 
-      <a class="event-link" href="/events/{{this}}">
-        <h2 class="event-name">{{ this.title }}</h2>
-        <image class="event-image">{{this.image}}
+
+      <a class="event-link" href="/events/{{this.title}}">
+        <h2 class="event-name">{{this.title}}</h2>
+        <image class="event-image" src="{{this.image}}" alt="{{this.title}}">
       </a>
       <p class="short-description">Description: {{ this.description }}</p>
       <p class="event-day">When? {{ this.day }}
