@@ -8,7 +8,9 @@
     <span class="one-event-time"> {{ event.time }} </span>
   </p>
   <p class="one-event-location"> <span class="bold">Where?</span> {{ event.location }}</p>
-  <p class="one-event-participants"> <span class="bold">Attendants:</span> {{ event.participants }} <button class="participants-btn"> I want to join! </button> </p>
+  <p class="one-event-participants" id="add"> <span class="bold" id="num"> {{ event.participants }}</span> <form class="thank" action="/thanks" method="get">
+    <button type="submit" class="participants-btn"> I want to join! </button> </p>
+  </form>
 <hr>
   <form action="/create" method="get" class="create-event" id="craeteEvent">
     <button type="submit" class="submit">Create Event</button>
