@@ -37,20 +37,34 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+  font-size: 0.8em;
 }
-
+/*css for home*/
 .submit-logo {
   cursor: pointer;
   border: none;
-  background-color: #EFF09D;
+  background-color: #F8F9C2;
 }
-.logo-button {
+.logo-button  {
   width: 150px;
   height: 150px;
   display: block;
   margin: 2em auto;
   border-radius: 50%;
 }
+.home-to-events {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+.sub-title {
+  color: #52184F;
+  font-size: 2em;
+  text-align: center;
+  line-height: 2em;
+  width: 100%;
+}
+/*css for events and event*/
 .event-item {
   border: 2px solid grey;
   border-radius: 5%;
@@ -81,6 +95,35 @@ footer {
 .bold {
   font-weight: bold;
 }
+.event-main-container {
+  margin: 1em;
+  margin-left: 2em;
+  font-size: 1.2em;
+}
+.one-event-image {
+  width: 150px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.one-event-name {
+  color: #7F486F;
+  text-align: center;
+  font-size: 1.4em;
+}
+.participants-btn {
+  background-color: #E1EBEB;
+  color: #52184F;
+  font-size: 1.2em;
+  padding: 0.2em;
+  margin-left: 2em;
+  border-radius: 15%;
+}
+hr {
+  border: 1px solid #7F486F;
+  width: 60%;
+  margin: 0 auto;
+}
 .submit {
   background-color: #7F486F;
   color: black;
@@ -89,6 +132,6 @@ footer {
   border-radius: 1em;
   width: auto;
   display: block;
-  margin: 1em auto;
+  margin: 0.5em auto;
   padding: 0.4em;
 }

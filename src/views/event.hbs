@@ -1,19 +1,17 @@
-<section class="main-container">
+<section class="event-main-container">
 
-  <h2 class="event-name">{{ event.title }}</h2>
-  <image class="event-image" src="{{ event.image }}" alt="{{ event.title }}">
-  <p class="short-description">Description: {{ event.description }}</p>
-  <p class="event-day">When? {{ event.day }}
-    <span class="event-date"> {{ event.date }} </span>
-    <span class="event-time"> {{ event.time }} </span>
+  <h2 class="one-event-name">{{ event.title }}</h2>
+  <image class="one-event-image" src="{{ event.image }}" alt="{{ event.title }}">
+  <p class="short-description"><span class="bold">What?</span> {{ event.description }}</p>
+  <p class="one-event-day"><span class="bold">When?</span> {{ event.day }}
+    <span class="one-event-date"> {{ event.date }} </span>
+    <span class="one-event-time"> {{ event.time }} </span>
   </p>
-  <p class="event-location"> Where? {{ event.location }}</p>
-  <p class="event-participants"> Attendants: {{ event.participants }}</p>
-
-  <button class="participants-btn"> I want to join! </button>
-
+  <p class="one-event-location"> <span class="bold">Where?</span> {{ event.location }}</p>
+  <p class="one-event-participants"> <span class="bold">Attendants:</span> {{ event.participants }} <button class="participants-btn"> I want to join! </button> </p>
+<hr>
   <form action="/create" method="get" class="create-event" id="craeteEvent">
     <button type="submit" class="submit">Create Event</button>
   </form>
-  
+
 </section>
