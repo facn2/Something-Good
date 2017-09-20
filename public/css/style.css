@@ -1,19 +1,44 @@
-body {
-  background-color: #EFF09D;
+html {
+  height: 100%;
 }
+body {
+  background-color: #F8F9C2;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100%;
+}
+/*css for header*/
 .header {
-display: flex;
-justify-content: space-around;
+  background-color: #E1EBEB;
+  padding: 1em;
+  margin: 0;
 }
 .header-title {
-  font-size: 1em;
+  font-size: 1.5em;
   color: #185148;
+  margin-left: 3em;
 }
 .logo-image {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  float: left;
 }
+/*css for footer*/
+footer {
+  background-color: #E1EBEB;
+  padding: 1em;
+  margin: 0;
+  padding: 0.2em;
+  text-align: center;
+  color: #185148;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .submit-logo {
   cursor: pointer;
   border: none;
@@ -59,11 +84,11 @@ justify-content: space-around;
 .submit {
   background-color: #7F486F;
   color: black;
-  font-size: 2em;
+  font-size: 1.5em;
   border: 2px solid grey;
   border-radius: 1em;
   width: auto;
   display: block;
   margin: 1em auto;
-  padding: 0.6em;
+  padding: 0.4em;
 }
