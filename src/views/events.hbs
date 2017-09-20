@@ -8,15 +8,15 @@
     <li class="event-item">
 
       <a class="event-link" href="/event/{{this.id}}">
-        <h2 class="event-name">{{this.title}}</h2>
         <image class="event-image" src="{{this.image}}" alt="{{this.title}}">
+        <h2 class="event-name">{{this.title}}</h2>
       </a>
-      <p class="short-description">Description: {{ this.description }}</p>
-      <p class="event-day">When? {{ this.day }}
+      <p class="short-description"><span class="bold"> What? </span> {{ this.description }}</p>
+      <p class="event-day"><span class="bold">When? </span>{{ this.day }}
         <span class="event-date"> {{ this.date }} </span>
         <span class="event-time"> {{ this.time }} </span>
       </p>
-      <p class="event-location"> Where? {{ this.location }}</p>
+      <p class="event-location"><span class="bold"> Where? </span>{{ this.location }}</p>
 
     </li>
 
