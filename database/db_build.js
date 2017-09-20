@@ -3,6 +3,7 @@ const db = require('./../database/db_connection.js');
 
 db.once('open', function () {
   console.log('connected to DB');
+  eventModel.collection.drop();
   const cleaning = {
     title: 'Cleaning the Street',
     description: 'We will clean Bisharah street and remove the trash',
